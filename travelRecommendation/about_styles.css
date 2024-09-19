@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: 0px 25%;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Raleway';
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, rgba(89,50,97,1) 0%, rgba(17,6,40,0) 50%);
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo and Title */
+.logo-title {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-right: -60rem;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+#title {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Search Bar */
+.search-section {
+    display: flex;
+    align-items: center;
+    color: white; 
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+}
+
+#search-bar {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+    width: 200px;
+}
+
+#search-btn, #reset-btn {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#search-btn:hover, #reset-btn:hover {
+    color: #252525;
+}
+
+/* Introduction */
+#intro-section {
+    justify-content: left;
+    align-items: left;
+    color: white;
+    text-align: justify;
+    padding: 4rem;
+    background: linear-gradient(90deg, rgba(89,50,97,1) 0%, rgba(17,6,40,0) 50%);
+    height: 100vh;
+}
+
+.intro-content {
+    padding: 2rem;
+
+}
+
+.team-section{
+    padding: 2rem;
+}
+
+.team-section h2{
+    color: #333;
+}
+
+.team-section p{
+    font-family: 'Raleway';
+    color: #333;
+}
+
+h1 {
+    font-family: 'Raleway Black';
+    text-align: left;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+    max-width: 800px;
+}
+
+p {
+    font-family: 'Raleway Thin';
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 800px; 
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #9b69a5;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #311b35;
+}
+
+/* Team */
+.team-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.profile-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.profile-card h4 {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: rgba(89,50,97,1);
+    color: white;
+    padding: 0rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
