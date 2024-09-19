@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    background-color: #593261ce;
+    background: linear-gradient(90deg, rgba(89,50,97,1) 0%, rgba(17,6,40,0) 50%);
     padding: 1rem;
 }
 
@@ -107,35 +107,35 @@ nav ul li a {
 
 /* Introduction */
 #intro-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Full viewport height */
-    background-image: url('images/background.jpg'); /* Background image */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white; /* Text color to contrast with the background */
-    text-align: center;
+    justify-content: left;
+    align-items: left;
+    color: white;
+    text-align: justify;
     padding: 2rem;
+    background: linear-gradient(90deg, rgba(89,50,97,1) 0%, rgba(17,6,40,0) 50%);
+    height: 100vh;
 }
 
 .intro-content {
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+    margin-top: 8%;
     padding: 2rem;
-    border-radius: 10px; /* Rounded corners */
-    max-width: 800px; /* Max width for content */
-    margin: auto;
+
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-family: 'Raleway Black';
+    text-align: left;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    font-weight: 900;
+    max-width: 700px;
 }
 
 p {
-    font-size: 1.2rem;
+    font-family: 'Raleway Thin';
+    font-size: 1.1rem;
     margin-bottom: 2rem;
+    max-width: 500px; 
 }
 
 .cta-button {
@@ -143,24 +143,63 @@ p {
     padding: 0.75rem 1.5rem;
     font-size: 1.1rem;
     color: #fff;
-    background-color: #4CAF50; /* Green button color */
+    background-color: #9b69a5;
     border: none;
-    border-radius: 25px; /* Rounded button */
+    border-radius: 25px;
     text-decoration: none;
     transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: #45a049; /* Slightly darker green on hover */
+    background-color: #311b35;
 }
 
 
 footer {
-    background-color: #333;
+    background-color: rgba(89,50,97,1);
     color: white;
-    text-align: center;
-    padding: 1rem;
+    padding: 0rem;
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 1rem;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
