@@ -165,12 +165,13 @@ p {
 .cta-button:hover {
     background-color: #311b35;
 }
+/* Form */
 
 .contact-form {
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    margin: 0 auto; /* Center the form horizontally */
+    margin: 0 20px; 
     padding: 20px;
     background-color: #f4f4f4;
     border: 1px solid #ddd;
@@ -192,11 +193,11 @@ p {
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 100%;
+    width: 95%;
 }
 
 .contact-form textarea {
-    resize: vertical; /* Allow vertical resizing only */
+    resize: vertical;
 }
 
 .contact-form button {
@@ -211,47 +212,7 @@ p {
 }
 
 .contact-form button:hover {
-    background-color: #311b35; /* Changes button color on hover */
-}
-/* Team */
-.team-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.profile-card {
-    background-color: #f4f4f4;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 30%;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.profile-card h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-.profile-card p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-}
-
-.profile-card h4 {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-.profile-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #311b35;
 }
 
 /* Footer */
