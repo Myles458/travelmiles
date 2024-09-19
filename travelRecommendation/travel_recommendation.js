@@ -42,7 +42,7 @@ function fetchAndSearch() {
                 }
             });
 
-            // Display results
+            // Display results in the modal
             displayResults(allResults);
         })
         .catch(error => {
@@ -50,9 +50,9 @@ function fetchAndSearch() {
         });
 }
 
-// Function to display the filtered results
+// Function to display the filtered results in the modal
 function displayResults(results) {
-    const resultsContainer = document.getElementById('results');
+    const resultsContainer = document.getElementById('modal-results');
     resultsContainer.innerHTML = '';  // Clear previous results
 
     if (results.length === 0) {
@@ -71,6 +71,9 @@ function displayResults(results) {
         `;
         resultsContainer.innerHTML += resultItem;
     });
+
+    // Show the modal
+    document.getElementById('result-modal').style.display = 'flex';
 }
 
 // Attach event listener to the search button
@@ -79,5 +82,18 @@ document.getElementById('search-btn').addEventListener('click', fetchAndSearch);
 // Optional: Add reset functionality
 document.getElementById('reset-btn').addEventListener('click', () => {
     document.getElementById('search-bar').value = '';  // Clear search input
-    document.getElementById('results').innerHTML = '';  // Clear results
+    document.getElementById('modal-results').innerHTML = '';  // Clear results
+    document.getElementById('result-modal').style.display = 'none';  // Hide modal
+});
+
+// Close the modal when the close button is clicked
+document.querySelector('.close-btn').addEventListener('click', () => {
+    document.getElementById('result-modal').style.display = 'none';
+});
+
+// Close the modal when clicking outside of the modal content
+window.addEventListener('click', (event) => {
+    if (event.target == document.getElementById('result-modal')) {
+        document.getElementById('result-modal').style.display = 'none';
+    }
 });

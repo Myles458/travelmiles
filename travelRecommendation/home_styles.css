@@ -155,31 +155,68 @@ p {
 }
 
 /* Results */
-#results {
-    margin-top: 20px;
+/* Modal container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    justify-content: center;
+    align-items: center;
 }
 
-.country {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
+/* Modal content box */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
 }
 
-.city {
-    margin-top: 10px;
-    padding-left: 15px;
+/* Close button */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.city img {
-    max-width: 100%;
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styling for search results inside the modal */
+#modal-results .result-item {
+    margin-bottom: 15px;
+}
+
+#modal-results .result-item h3 {
+    margin: 10px 0;
+}
+
+#modal-results .result-item img {
+    width: 100%;
     height: auto;
-    margin-top: 10px;
+    max-width: 300px;
     border-radius: 8px;
 }
 
+#modal-results .result-item p {
+    margin-top: 10px;
+}
 
+
+/*Footer*/
 footer {
     background-color: rgba(89,50,97,1);
     color: white;
